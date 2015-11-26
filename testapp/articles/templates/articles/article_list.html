@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Article Index</title>
+</head>
+<body>
+<form method="get">
+  {{ form }}
+  <button type="submit">Search</button>
+</form>
+<ul>
+  {% for article in object_list %}
+    <li>{{ title }} <span class="author">{{ author }}</span></li>
+  {% endfor %}
+</ul>
+</body>
+</html>
